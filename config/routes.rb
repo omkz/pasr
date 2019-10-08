@@ -15,6 +15,6 @@ Rails.application.routes.draw do
   resources :order_items, only: [:create, :update, :destroy]
 
   get '/category/:id',  to: 'product_categories#show', as: "category"
-  root to: "products#index"
+  root to: "home#index"
   
 end
