@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   resources :charges
-  resources :products, only: [:index, :show]
+  resources :products
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]
 
