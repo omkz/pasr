@@ -6,16 +6,17 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @product = Product.new
+    if current_user.is_vendor?
+      @product = Product.new
+    else
+      redirect_to new_vendor_path, notice: 'Create vendor first.'
+    end
   end
 
   def edit
   end
 
   def create
-    # @product = Product.new(product_params) do |product|
-    #   product.user = current_user
-    # end
 
     @product = Product.new(product_params)
 

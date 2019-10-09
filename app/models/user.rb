@@ -5,4 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :vendor
+
+  def is_vendor?
+    self.vendor
+  end
 end
