@@ -3,6 +3,7 @@ require 'uploads'
 class Product < ApplicationRecord
   belongs_to :product_category
   has_many :order_items
+  has_many :products
   has_one_attached :image
 
   default_scope { where(active: true) }

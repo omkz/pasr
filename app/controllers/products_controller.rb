@@ -17,8 +17,9 @@ class ProductsController < ApplicationController
   end
 
   def create
-
-    @product = Product.new(product_params)
+    @product = Product.new(product_params) do |product|
+      product.user_id = current_user
+    end
 
     respond_to do |format|
       if @product.save
