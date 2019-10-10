@@ -1,23 +1,31 @@
-<%= form_for(@product) do |f| %>
-  <div class="form-group">
-    <%= f.label 'name' %>
-    <%= f.collection_select(:product_category_id, ProductCategory.all, :id, :name) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 p-4 card bg-light">
+      <h1>New Listing</h1>
+      <%= form_for(@product) do |f| %>
+        <div class="form-group">
+          <%= f.label 'Category' %>
+          <%= f.collection_select(:product_category_id, ProductCategory.all, :id, :name) %>
+        </div>
+        <div class="form-group">
+          <%= f.label 'name' %>
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label 'price' %>
+          <%= f.text_field :price, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label 'description' %>
+          <%= f.text_field :description, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label 'Image' %>
+          <%= f.file_field :image %>
+        </div>
+        <%= f.submit "Create listing", class: 'btn btn-primary' %>
+      <% end %>
+    </div>
   </div>
-  <div class="form-group">
-    <%= f.label 'name' %>
-    <%= f.text_field :name, class: 'form-control' %>
-  </div>
-  <div class="form-group">
-    <%= f.label 'price' %>
-    <%= f.text_field :price, class: 'form-control' %>
-  </div>
-  <div class="form-group">
-    <%= f.label 'description' %>
-    <%= f.text_field :description, class: 'form-control' %>
-  </div>
-  <div class="form-group">
-    <%= f.label 'Image' %>
-    <%= f.file_field :image %>
-  </div>
-  <%= f.submit :post, class: 'btn btn-primary' %>
-<% end %>
+</div>
+

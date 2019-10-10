@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:edit, :update, :destroy]
 
   def index
-    @products = Product.all
+    @products = Product.includes(image_attachment: :blob)
   end
 
   def new
