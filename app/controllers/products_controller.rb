@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:edit, :update, :destroy]
 
   def index
-    @products = Product.includes(image_attachment: :blob)
+    @products = Product.includes(image_attachment: :blob).where("user_id = ?", current_user.id)
   end
 
   def new
@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params) do |product|
-      product.user_id = current_user
+      product.user = current_user
     end
 
     respond_to do |format|
