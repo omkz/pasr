@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:edit, :update, :destroy]
 
   def index
-    @products = Product.includes(image_attachment: :blob).where("user_id = ?", current_user.id)
+    @products = Product.includes(image_attachment: :blob).where("vendor_id = ?", current_user.id)
   end
 
   def new
@@ -18,7 +18,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params) do |product|
-      product.user = current_user
+      product.vendor = current_user.vendor
     end
 
     respond_to do |format|
@@ -58,7 +58,7 @@ class ProductsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def product_params
-    params.require(:product).permit(:name, :price, :description, :image, :product_category_id, :user_id)
+    params.require(:product).permit(:name, :price, :description, :image, :product_category_id, :vendor_id)
   end
 
 end

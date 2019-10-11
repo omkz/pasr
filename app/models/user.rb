@@ -5,7 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :vendor
-  has_many :products
 
   def is_vendor?
     self.vendor
