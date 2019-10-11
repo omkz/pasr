@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Pundit
   protect_from_forgery with: :exception
   helper_method :current_order
   before_action :set_categories
