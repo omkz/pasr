@@ -5,7 +5,7 @@ class VendorsController < ApplicationController
   # GET /vendors
   # GET /vendors.json
   def index
-    @vendors = Vendor.all
+    @vendors = Vendor.where("user_id = ?", current_user.id)
   end
 
   # GET /vendors/1
