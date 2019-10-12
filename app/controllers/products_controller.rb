@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:edit, :update, :destroy]
 
   def index
-    @products = Product.includes(image_attachment: :blob).where("vendor_id = ?", current_user.id)
+    @products = Product.includes(image_attachment: :blob).where("vendor_id = ?", current_user.vendor)
   end
 
   def new
