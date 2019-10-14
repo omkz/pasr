@@ -14,4 +14,8 @@ class Product < ApplicationRecord
     ActiveStorage::Variant.new(image.blob, variation)
   end
 
+  def self.search(query)
+    where("name like ?", "%#{query}%") 
+  end
+
 end
