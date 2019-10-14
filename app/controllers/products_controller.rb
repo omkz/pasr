@@ -50,6 +50,14 @@ class ProductsController < ApplicationController
     @order_item = current_order.order_items.new
   end
 
+  def destroy
+    @product.destroy
+    respond_to do |format|
+      format.html { redirect_to products_url, notice: 'product was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_product
