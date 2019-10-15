@@ -2,7 +2,18 @@
   <div class="row">
     <div class="col-md-6 offset-md-3 p-4 card bg-light">
       <h1>New Listing</h1>
-      <%= form_for(@product) do |f| %>
+      <%= form_with(model: product, local: true) do |f| %>
+      <% if product.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+            <ul>
+              <% product.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
         <div class="form-group">
           <%= f.label 'Category' %>
           <%= f.collection_select(:product_category_id, ProductCategory.all, :id, :name, {}, {class: "form-control"}) %>
