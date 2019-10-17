@@ -2,14 +2,14 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-lg-2 col-md-6 mb-4">
-        <div class="card">
+        <div class="card product">
           <%= link_to product do %>
             <%= image_tag(product.image.variant(resize_to_fill: [192, 192]), class: "card-img-top") if product.image.attached? %>
             <div class="card-body">
-              <p class="card-text"><%= product.name %></p>
+              <p class="card-text"><%= product.name %></p>     
             </div>
-            <div class="card-footer text-muted">
-              <p class="card-text">Price: <%= product.price %></p>
+            <div class="card-footer">
+              <small class="text-muted">Price: <%= product.price %></small>
             </div>
           <% end %>
         </div>

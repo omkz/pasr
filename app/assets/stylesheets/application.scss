@@ -4,17 +4,15 @@
 body {
   padding-top: 6rem;
   font-family: "Open Sans", serif;
-  background: #ECF0F3;
+  background: #ecf0f3;
 }
 
-.card {
-  height: 100%;
-}
-
-a.card {
-  color: #212529;
-}
-a.card:hover {
-  color: #212529;
-  text-decoration: underline overline dotted red;
+.card.product {
+  // height: 100%;
+  a {
+    color: #212529;
+  }
+  a:hover {
+    text-decoration: underline overline dotted red;
+  }
 }
