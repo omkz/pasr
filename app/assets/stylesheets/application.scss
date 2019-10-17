@@ -7,12 +7,10 @@ body {
   background: #ecf0f3;
 }
 
-.card.product {
-  // height: 100%;
-  a {
-    color: #212529;
-  }
-  a:hover {
-    text-decoration: underline overline dotted red;
+a .card.product {
+  color: #212529; 
+  &:hover {
+    text-decoration: underline overline dotted red; 
   }
 }
+
