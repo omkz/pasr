@@ -2,7 +2,7 @@
 
 Waroong is an open-source marketplace solution based on Ruby on Rails 6.
 
-[![Screenshot](https://raw.githubusercontent.com/omkz/waroong/master/public/Screenshot.png)]
+![Screenshot](https://raw.githubusercontent.com/omkz/waroong/master/public/Screenshot.png)
 
 ## Tech Stack
 
