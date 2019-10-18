@@ -9,6 +9,7 @@ Waroong is an open-source marketplace solution based on Ruby on Rails 6.
 - Ruby 2.6.3
 - Ruby on Rails 6.x.x
 - PostgreSQL 9.5
+- Elasticsearch 7.x
 - Stripe
 - jQuery
 - Gem: 
