@@ -18,6 +18,7 @@ gem 'stripe'
 gem 'image_processing', '~> 1.2'
 gem 'devise'
 gem 'pundit'
+gem 'searchkick'
 
 group :development, :test do
   gem 'dotenv-rails'
