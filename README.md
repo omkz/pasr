@@ -10,6 +10,7 @@ Waroong is an open-source marketplace solution based on Ruby on Rails 6.
 - Ruby on Rails 6.x.x
 - PostgreSQL 9.5
 - Elasticsearch 7.x
+- Memcached
 - Stripe
 - jQuery
 - Gem: 
@@ -26,6 +27,11 @@ Before you get started, the following needs to be installed:
   * **Bundler**: `gem install bundler`
   * [**Git**](http://help.github.com/git-installation-redirect)
   * **A database**. Only PostgreSQL 9.5 has been tested, so we give no guarantees that other databases (e.g. MySQL) work. If you're using OS X and have Homebrew installed, install it with `brew install postgresql`
+  * **Elasticsearch**: 
+    - `brew install elasticsearch`
+    - `brew services start elasticsearch`
+  * **Memcached**: `brew install memcahed`
+
   
 ### Setting up the development environment
 
