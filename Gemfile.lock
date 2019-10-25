@@ -95,7 +95,9 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
+    connection_pool (2.2.2)
     crass (1.0.4)
+    dalli (2.7.10)
     datetime_picker_rails (0.0.7)
       momentjs-rails (>= 2.8.1)
     devise (4.7.1)
@@ -292,6 +294,8 @@ DEPENDENCIES
   bullet
   byebug
   coffee-rails (~> 4.2)
+  connection_pool
+  dalli
   devise
   dotenv-rails
   flamegraph

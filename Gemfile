@@ -22,6 +22,8 @@ gem 'image_processing', '~> 1.2'
 gem 'devise'
 gem 'pundit'
 gem 'searchkick'
+gem 'dalli'
+gem 'connection_pool'
 
 group :development, :test do
   gem 'dotenv-rails'
