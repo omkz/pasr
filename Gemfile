@@ -4,9 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '~> 6.0.0'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
-gem 'rack-mini-profiler'
-gem 'flamegraph'
-gem 'stackprof'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -24,6 +21,13 @@ gem 'pundit'
 gem 'searchkick'
 gem 'dalli'
 gem 'connection_pool'
+gem 'rack-mini-profiler'
+# For memory profiling
+gem 'memory_profiler'
+
+# For call-stack profiling flamegraphs
+gem 'flamegraph'
+gem 'stackprof'
 
 group :development, :test do
   gem 'dotenv-rails'
