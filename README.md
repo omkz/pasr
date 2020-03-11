@@ -1,8 +1,8 @@
-# Waroong!
+# Pasr!
 
-Waroong is an open-source marketplace solution based on Ruby on Rails 6.
+Pasr is an open-source marketplace solution based on Ruby on Rails 6.
 
-![Screenshot](https://raw.githubusercontent.com/omkz/waroong/master/public/Screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/omkz/pasr/master/public/Screenshot.png)
 
 ## Tech Stack
 
@@ -38,8 +38,8 @@ Before you get started, the following needs to be installed:
 1. Get the code. Clone this git repository:
 
   ```bash
-  git clone git://github.com/omkz/waroong.git
-  cd waroong
+  git clone git://github.com/omkz/pasr.git
+  cd pasr
   ```
 
 1. Install the required gems by running the following command in the project root directory:
@@ -71,4 +71,4 @@ The best way to contribute is to do one of the following :
 
 ## License
 
-Waroong is open source under the MIT license. See [LICENSE](LICENSE) for details.
+Pasr is open source under the MIT license. See [LICENSE](LICENSE) for details.
