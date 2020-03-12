@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: waroong_development
+  database: pasr_development
 
 test:
   <<: *default
-  database: waroong_test
+  database: pasr_test
 
 production:
   <<: *default
-  database: waroong_production
-  username: waroong
-  password: <%= ENV['WAROONG_DATABASE_PASSWORD'] %>
+  database: pasr_production
+  username: pasr
+  password: <%= ENV['PASR_DATABASE_PASSWORD'] %>
