@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <% cache "product_list" do %>
-      <% @products.each do |product| %>
+    <% @products.each do |product| %>
+      <% cache product do %>
         <div class="col-lg-2 col-md-6 mb-4">
           <%= link_to product do %>
             <div class="card product h-100">
@@ -15,6 +15,7 @@
             </div>
           <% end %>
         </div>
-      <% end %><% end %>
+      <% end %>
+    <% end %>
   </div>
 </div>
