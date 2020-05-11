@@ -9,10 +9,9 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Categories
         </a>
-
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <% cache "categories" do %>
-            <% @categories.each do |cat| %>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <% @categories.each do |cat| %>
+            <% cache cat do %>
               <%= link_to cat.name.capitalize, category_path(cat), class: "dropdown-item" %>
             <% end %>
           <% end %>
