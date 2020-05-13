@@ -4,6 +4,6 @@ require("@rails/activestorage").start()
 require("channels")
 
 import 'jquery'
-import 'popper.js'
-import 'bootstrap'
+import('src/plugins') // loads async
+
 import 'css/site'
