@@ -78,10 +78,6 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
-    bootstrap (4.4.1)
-      autoprefixer-rails (>= 9.1.0)
-      popper_js (>= 1.14.3, < 2)
-      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     bullet (6.1.0)
       activesupport (>= 3.0.0)
@@ -178,7 +174,6 @@ GEM
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     pg (1.2.3)
-    popper_js (1.16.0)
     puma (3.12.4)
     pundit (2.1.0)
       activesupport (>= 3.0.0)
@@ -299,7 +294,6 @@ DEPENDENCIES
   administrate
   administrate-field-active_storage
   bootsnap (>= 1.1.0)
-  bootstrap (>= 4.3.1)
   bullet
   byebug
   coffee-rails (~> 4.2)
@@ -310,7 +304,6 @@ DEPENDENCIES
   flamegraph
   image_processing (~> 1.2)
   jbuilder (~> 2.5)
-  jquery-rails
   listen (>= 3.0.5, < 3.2)
   memory_profiler
   pg (>= 0.18, < 2.0)
