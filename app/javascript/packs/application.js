@@ -7,3 +7,5 @@ import 'jquery'
 import('src/plugins') // loads async
 
 import 'css/site'
+
+Turbolinks.setProgressBarDelay(25)
