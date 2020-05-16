@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 offset-md-3 p-4 card bg-light">
-      <h1>New Listing</h1>
       <%= form_with(model: product, local: true) do |f| %>
       <% if product.errors.any? %>
           <div id="error_explanation">
