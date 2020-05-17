@@ -5,7 +5,7 @@ class Product < ApplicationRecord
 
   belongs_to :product_category
   belongs_to :vendor
-  has_many :order_items
+  has_many :order_items, dependent: :destroy
   has_one_attached :image
 
   validates :name, presence: true
