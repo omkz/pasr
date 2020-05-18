@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 p-4 card bg-light">
-      <h1>New Vendor</h1>
       <%= form_with(model: vendor, local: true) do |form| %>
         <% if vendor.errors.any? %>
           <div id="error_explanation">
@@ -71,7 +70,7 @@
         </div>
 
         <div class="actions">
-          <%= form.submit "Create Vendor", class: "btn btn-primary btn-block"%>
+          <%= form.submit nil, class: "btn btn-primary btn-block"%>
         </div>
       <% end %>
 
