@@ -5,7 +5,11 @@ class VendorsController < ApplicationController
   # GET /vendors
   # GET /vendors.json
   def index
-    @vendors = Vendor.where("user_id = ?", current_user.id)
+    unless current_user.vendor
+      @vendor = Vendor.new
+    else
+      @vendor = current_user.vendor
+    end
   end
 
   # GET /vendors/1
