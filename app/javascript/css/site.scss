@@ -4,21 +4,3 @@ $theme-colors: (
 );
 
 @import "~bootstrap/scss/bootstrap.scss";
-
-body {
-  padding-top: 6rem;
-  font-family: "Open Sans", serif;
-  background: #ecf0f3;
-}
-
-a .card.product {
-  color: #212529;
-  &:hover {
-    text-decoration: underline overline dotted red;
-  }
-}
-
-.turbolinks-progress-bar {
-  height: 5px;
-  background-color: blue;
-}
