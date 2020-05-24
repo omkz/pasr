@@ -5,7 +5,7 @@
       <div class="card-body">
         <h3 class="card-title"><%= @product.name %></h3>
         <%= form_for @order_item, remote: true do |f| %>
-          <p class="card-text"> Unit Price: <%= number_to_currency @product.price %></p>
+          <p class="card-text"> Price: <%= number_to_currency @product.price %></p>
           <div class="input-group mb-3">
             <%= f.number_field :quantity, value: 1, class: "form-control", min: 1  %>
             <div class="input-group-append">
