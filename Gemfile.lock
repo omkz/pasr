@@ -184,6 +184,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rack-timeout (0.5.1)
     rails (6.0.3)
       actioncable (= 6.0.3)
       actionmailbox (= 6.0.3)
@@ -310,6 +311,7 @@ DEPENDENCIES
   puma (~> 3.11)
   pundit
   rack-mini-profiler
+  rack-timeout
   rails (~> 6.0.2, >= 6.0.2.2)
   sass-rails (~> 5.0)
   searchkick

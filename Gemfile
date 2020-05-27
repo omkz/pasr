@@ -22,6 +22,7 @@ gem 'connection_pool'
 gem 'rack-mini-profiler'
 # For memory profiling
 gem 'memory_profiler'
+gem "rack-timeout"
 
 # For call-stack profiling flamegraphs
 gem 'flamegraph'
