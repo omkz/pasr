@@ -57,7 +57,7 @@ Before you get started, the following needs to be installed:
 1. Start the development server:
 
   ```bash
-  rails s
+  foreman start -f Procfile.dev
   ```
 
 ## If you want to contribute
